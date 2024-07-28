@@ -189,7 +189,7 @@ GameObject:
   - component: {fileID: 97125962}
   - component: {fileID: 97125961}
   m_Layer: 3
-  m_Name: Limit Counter
+  m_Name: Speed Counter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -325,7 +325,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4348591472116340679, guid: 2576cd21fa9e09b4ab232f9ee768c4c3, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7982907211670302305, guid: 2576cd21fa9e09b4ab232f9ee768c4c3, type: 3}
       propertyPath: nightDayCyle
@@ -872,11 +872,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1014968109006467242, guid: 5056aecfdd31fa44b87c9fd4c08a8f61, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1014968109006467242, guid: 5056aecfdd31fa44b87c9fd4c08a8f61, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2860218145045945846, guid: 5056aecfdd31fa44b87c9fd4c08a8f61, type: 3}
       propertyPath: buttonHandler
@@ -888,7 +888,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6246735915565934575, guid: 5056aecfdd31fa44b87c9fd4c08a8f61, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3487,7 +3487,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4348591472116340679, guid: 2576cd21fa9e09b4ab232f9ee768c4c3, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7982907211670302305, guid: 2576cd21fa9e09b4ab232f9ee768c4c3, type: 3}
       propertyPath: nightDayCyle
@@ -3896,7 +3896,7 @@ GameObject:
   - component: {fileID: 1330960012}
   - component: {fileID: 1330960011}
   m_Layer: 3
-  m_Name: Limit Counter
+  m_Name: Sheep Health Counter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4384,7 +4384,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1464170147}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 443eaf2f5e6a4d84187122a73c4a8aa9, type: 3}
+  m_Script: {fileID: 11500000, guid: f0e97e4834bab574ebe16042d77bf432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   uI_Handler: {fileID: 285096133}
@@ -30599,7 +30599,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4348591472116340679, guid: 2576cd21fa9e09b4ab232f9ee768c4c3, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7982907211670302305, guid: 2576cd21fa9e09b4ab232f9ee768c4c3, type: 3}
       propertyPath: nightDayCyle
@@ -33452,7 +33452,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4348591472116340679, guid: 2576cd21fa9e09b4ab232f9ee768c4c3, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7982907211670302305, guid: 2576cd21fa9e09b4ab232f9ee768c4c3, type: 3}
       propertyPath: nightDayCyle
@@ -33720,11 +33720,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1014968109006467242, guid: 5056aecfdd31fa44b87c9fd4c08a8f61, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1014968109006467242, guid: 5056aecfdd31fa44b87c9fd4c08a8f61, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2860218145045945846, guid: 5056aecfdd31fa44b87c9fd4c08a8f61, type: 3}
       propertyPath: buttonHandler
@@ -33736,7 +33736,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6246735915565934575, guid: 5056aecfdd31fa44b87c9fd4c08a8f61, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class SpeedAbilCounter : MonoBehaviour
+public class SpeedAbil : MonoBehaviour
 {
     [SerializeField] UI_Handler uI_Handler;
     [SerializeField] TextMeshProUGUI counterText;
