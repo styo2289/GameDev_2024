@@ -5,6 +5,7 @@ using UnityEngine;
 public class FollowTarget : MonoBehaviour
 {
     private Transform target;
+    private SpriteRenderer sprite;
     [SerializeField] string gameObjectTag;
     [SerializeField] float distanceFromTarget = 2.0f;
     [SerializeField] float speed = 2.0f;
@@ -14,6 +15,7 @@ public class FollowTarget : MonoBehaviour
     void Start()
     {
         target = GameObject.FindGameObjectWithTag(gameObjectTag).GetComponent<Transform>();
+        sprite = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -25,6 +27,14 @@ public class FollowTarget : MonoBehaviour
         }//if object is certain distance from target, follow, otherwise stop. (maintains distance)
         else if(Vector3.Distance(transform.position, target.position) > distanceFromTarget){
             Follow();
+        }
+
+
+        if(target.position.x < gameObject.transform.position.x){
+            sprite.flipX = false;
+        }
+        if(target.position.x > gameObject.transform.position.x){
+            sprite.flipX = true;
         }
         
     }

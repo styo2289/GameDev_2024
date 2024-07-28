@@ -325,7 +325,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4348591472116340679, guid: 2576cd21fa9e09b4ab232f9ee768c4c3, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7982907211670302305, guid: 2576cd21fa9e09b4ab232f9ee768c4c3, type: 3}
       propertyPath: nightDayCyle
@@ -419,7 +419,7 @@ MonoBehaviour:
   - timeMarker: 0.9
     color: {r: 0.07498832, g: 0.06063838, b: 0.26415092, a: 0}
     intensity: 0.5
-  cycleLength: 60
+  cycleLength: 48
   light2D: {fileID: 185805723}
 --- !u!114 &185805723
 MonoBehaviour:
@@ -872,11 +872,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1014968109006467242, guid: 5056aecfdd31fa44b87c9fd4c08a8f61, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1014968109006467242, guid: 5056aecfdd31fa44b87c9fd4c08a8f61, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2860218145045945846, guid: 5056aecfdd31fa44b87c9fd4c08a8f61, type: 3}
       propertyPath: buttonHandler
@@ -888,7 +888,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6246735915565934575, guid: 5056aecfdd31fa44b87c9fd4c08a8f61, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3389,7 +3389,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &941832600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3487,7 +3487,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4348591472116340679, guid: 2576cd21fa9e09b4ab232f9ee768c4c3, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7982907211670302305, guid: 2576cd21fa9e09b4ab232f9ee768c4c3, type: 3}
       propertyPath: nightDayCyle
@@ -30599,7 +30599,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4348591472116340679, guid: 2576cd21fa9e09b4ab232f9ee768c4c3, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7982907211670302305, guid: 2576cd21fa9e09b4ab232f9ee768c4c3, type: 3}
       propertyPath: nightDayCyle
@@ -33452,7 +33452,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4348591472116340679, guid: 2576cd21fa9e09b4ab232f9ee768c4c3, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7982907211670302305, guid: 2576cd21fa9e09b4ab232f9ee768c4c3, type: 3}
       propertyPath: nightDayCyle
@@ -33720,11 +33720,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1014968109006467242, guid: 5056aecfdd31fa44b87c9fd4c08a8f61, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1014968109006467242, guid: 5056aecfdd31fa44b87c9fd4c08a8f61, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2860218145045945846, guid: 5056aecfdd31fa44b87c9fd4c08a8f61, type: 3}
       propertyPath: buttonHandler
@@ -33736,7 +33736,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6246735915565934575, guid: 5056aecfdd31fa44b87c9fd4c08a8f61, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

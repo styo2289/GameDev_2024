@@ -35,10 +35,10 @@ public class PlayableCharacter : MonoBehaviour
         input *= speed;
 
         // flips sprite image
-        if(input.x < 0){
+        if(input.x > 0){
             transform.localScale = new Vector3(-1,1,0);
         }
-        if(input.x > 0){
+        if(input.x < 0){
             transform.localScale = new Vector3(1,1,0);
         }
 
