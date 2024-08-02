@@ -12,13 +12,17 @@ public class PlayableCharacter : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Health health;
 
+    private List<int> coinList;
+
     void Awake(){
         rigidbod = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         health = GetComponent<Health>();
+        coinList = new List<int>();
 
         buttonHandler.OnHealthClick += IncreaseHealth;
         buttonHandler.OnSpeedClick += IncreaseSpeed;
+
     }
 
 

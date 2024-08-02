@@ -26,11 +26,8 @@ public class HitBox : MonoBehaviour
         }
 
         if(coolDown <= 0 && other.GetComponent<HurtBox>() != null){
-            
-            Debug.Log("HIT BOX - getComp<hurtbox>()");
             coolDown = 0.25f;
             other.GetComponent<HurtBox>().Hurt(damage);
-            
         }
     }
 }

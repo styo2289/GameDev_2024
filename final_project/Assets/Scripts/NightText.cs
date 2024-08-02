@@ -16,6 +16,6 @@ public class NightText : MonoBehaviour
 
     public void UpdateNightText(int e){
         string numText = e.ToString();
-        counterText.text = numText + " / 4";
+        counterText.text = numText;
     }
 }

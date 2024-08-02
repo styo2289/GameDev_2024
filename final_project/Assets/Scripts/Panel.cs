@@ -21,10 +21,15 @@ public class Panel : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other){
         if(target){
             panel.gameObject.SetActive(true);
+            PauseGame();
         }
     }
 
-    void OnTriggerExit2D(Collider2D other){
-        panel.gameObject.SetActive(false);
+    // void OnTriggerExit2D(Collider2D other){
+    //     panel.gameObject.SetActive(false);
+    // }
+
+    void PauseGame(){
+        Time.timeScale = 0;
     }
 }

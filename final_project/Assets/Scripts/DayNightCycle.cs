@@ -72,15 +72,10 @@ public class DayNightCycle : MonoBehaviour
         currMarkIndex = (currMarkIndex + 1) % markList.Length; //returns the index back to 0 when EOA 
         nextMarkIndex = (currMarkIndex + 1) % markList.Length; //ditto
 
-        //Keeps track of night text
-        if(dayTally > 3){
-            dayTally = 0;
-        }
-
         switch(currMarkIndex){
             case 0:
-                dayTally++;
                 OnNewDay?.Invoke(dayTally);
+                dayTally++;
                 break;
             case 2:
                 OnEnterNightTime?.Invoke(currMarkIndex);

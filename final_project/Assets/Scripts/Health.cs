@@ -7,11 +7,14 @@ public class Health : MonoBehaviour
     [SerializeField] int maxHealth = 10;
     [SerializeField] int currentHealth = 10;
     [SerializeField] HealthBar healthBar;
+    private Flash damageFlash;
 
     public void Awake(){
         if(healthBar != null){
             healthBar.SetMaxHealth(maxHealth);
         }
+
+        damageFlash = GetComponent<Flash>();
     }
 
     public void TakeDamage(int damage){
@@ -20,6 +23,8 @@ public class Health : MonoBehaviour
         }
 
         currentHealth -= damage;
+        damageFlash.CallFlashRoutine();
+
         if(healthBar != null){
             healthBar.SetHealth(currentHealth);
         }

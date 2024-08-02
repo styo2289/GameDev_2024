@@ -11,12 +11,18 @@ public class UI_Handler : MonoBehaviour
     
     private int healthCounter = 0, speedCounter = 0, sheepCounter = 0;
     private bool selected = false;
+    private AudioSource audioSource;
 
+    public void Start(){
+        audioSource = GetComponent<AudioSource>();
+    }
     
     public void IncreaseHealth(){
         if(!selected && healthCounter < 2){
             OnHealthClick?.Invoke(2);
+            audioSource.Play();
 
+            Debug.Log("CLICK");
             healthCounter++;
             OnHealthUpdate?.Invoke(healthCounter);
 
@@ -27,7 +33,9 @@ public class UI_Handler : MonoBehaviour
     public void IncreaseSpeed(){
         if(!selected && speedCounter < 2){
             OnSpeedClick?.Invoke(2);
+            audioSource.Play();
 
+            Debug.Log("CLICK");
             speedCounter++;
             OnSpeedUpdate?.Invoke(speedCounter);
 
@@ -38,7 +46,9 @@ public class UI_Handler : MonoBehaviour
     public void IncreaseSheepHealth(){
         if(!selected && sheepCounter < 2){
             OnSheepHealthClick?.Invoke(2);
+            audioSource.Play();
 
+            Debug.Log("CLICK");
             sheepCounter++;
             OnSheepUpdate?.Invoke(sheepCounter);
 
@@ -48,6 +58,12 @@ public class UI_Handler : MonoBehaviour
 
     public void ClosePanel(){
         selected = false;
+        gameObject.SetActive(false);
+        ResumeGame();
         Debug.Log("CLICK");
+    }
+
+    void ResumeGame(){
+        Time.timeScale = 1;
     }
 }
