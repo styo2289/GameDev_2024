@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
-    public delegate void CoinHandler(int num);
-    public event CoinHandler OnCoinPickup;
-    private int coins = 0;
-
+    private int count;
     [SerializeField] AudioClip clip;
+    
     public void OnTriggerEnter2D(Collider2D other){
-        AudioSource.PlayClipAtPoint(clip, transform.position);
-        Destroy(gameObject);
-        coins++;
+        if(other.gameObject.CompareTag("Player")){
+            AudioSource.PlayClipAtPoint(clip, transform.position);
+            Destroy(gameObject);
 
-        OnCoinPickup?.Invoke(coins);
+            count++;
+            CoinCounterText.instance.UpdateCoinText(count);
+            
+        }
     }
 }

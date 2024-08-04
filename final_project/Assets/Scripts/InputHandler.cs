@@ -12,6 +12,10 @@ public class InputHandler : MonoBehaviour
         
     }
 
+    void Update(){
+        character.AimTool(Camera.main.ScreenToWorldPoint(Input.mousePosition));
+    }
+
     // Update is called once per frame
     void FixedUpdate()
     {

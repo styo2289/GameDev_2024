@@ -563,7 +563,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectTag: Player
-  distanceFromTarget: 1
+  distanceFromTarget: 1.5
   speed: 3
 --- !u!114 &2860218145045945846
 MonoBehaviour:

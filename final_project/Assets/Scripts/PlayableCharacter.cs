@@ -7,22 +7,19 @@ public class PlayableCharacter : MonoBehaviour
 {
     [SerializeField] float speed =  5.0f;
     [SerializeField] UI_Handler buttonHandler;
+    [SerializeField] WeaponBehavior weapon;
 
     private Rigidbody2D rigidbod;
     private SpriteRenderer spriteRenderer;
     private Health health;
 
-    private List<int> coinList;
-
     void Awake(){
         rigidbod = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         health = GetComponent<Health>();
-        coinList = new List<int>();
 
         buttonHandler.OnHealthClick += IncreaseHealth;
         buttonHandler.OnSpeedClick += IncreaseSpeed;
-
     }
 
 
@@ -53,6 +50,10 @@ public class PlayableCharacter : MonoBehaviour
 
     private void Die(){
         SceneManager.LoadScene("Menu");
+    }
+
+    public void AimTool(Vector3 position){
+        weapon.Aim(position);
     }
 
     //--------------------

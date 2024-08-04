@@ -19,6 +19,6 @@ public class MainMenuHandler : MonoBehaviour
     private IEnumerator LoadScene(){
         animatedImage.SetTrigger("end");
         yield return new WaitForSeconds(1.5f);
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("InstructionScene");
     }
 }
