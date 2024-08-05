@@ -32,7 +32,7 @@ public class UI_Handler : MonoBehaviour
 
     public void IncreaseSpeed(){
         if(!selected && speedCounter < 2){
-            OnSpeedClick?.Invoke(2);
+            OnSpeedClick?.Invoke(1);
             audioSource.Play();
 
             Debug.Log("CLICK");

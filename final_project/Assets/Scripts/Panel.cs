@@ -6,7 +6,6 @@ public class Panel : MonoBehaviour
 {
 
     [SerializeField] GameObject panel;
-    private GameObject target;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,12 +13,11 @@ public class Panel : MonoBehaviour
             panel.gameObject.SetActive(false);
         }
         
-        target = GameObject.FindGameObjectWithTag("Player");
     }
 
 
     void OnTriggerEnter2D(Collider2D other){
-        if(target){
+        if(other.gameObject.CompareTag("Player")){
             panel.gameObject.SetActive(true);
             PauseGame();
         }
